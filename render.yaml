@@ -20,7 +20,7 @@ services:
       - key: ALLOW_DEV_SEED
         value: "false"
 
-  - type: static_site
+  - type: static
     name: freshcart-web
     rootDir: frontend
     plan: free
