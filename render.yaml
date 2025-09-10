@@ -20,17 +20,15 @@ services:
       - key: ALLOW_DEV_SEED
         value: "false"
 
-  - type: static
+  - type: web
     name: freshcart-web
+    env: static
     rootDir: frontend
     plan: free
     buildCommand: npm ci && npm run build
-    publishPath: dist
+    staticPublishPath: dist
     envVars:
       - key: VITE_API_URL
-        fromService:
-          type: web
-          name: freshcart-api
-          envVarKey: RENDER_EXTERNAL_URL
+        sync: false
 
 
