@@ -1,6 +1,3 @@
-Here’s a clean, polished `README.md` for your **FreshCart** repo without Docker references:
-
-```markdown
 # 🛒 FreshCart
 
 A modern full-stack grocery e-commerce app built with **React (Vite)** and **Express/MongoDB**.  
@@ -191,7 +188,4 @@ Base URL: `http://localhost:5000`
 
 MIT (or project default). Update as needed.
 
-```
-
-Do you also want me to **make this README more GitHub-friendly** (with badges, demo screenshots, and prettier sections), or keep it strictly technical like this?
 ```
