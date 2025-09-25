@@ -14,7 +14,7 @@ function Items() {
   const [categories, setCategories] = useState([])
   const { cart, addToCart, updateQuantity, removeFromCart } = useCart()
   const navigate = useNavigate()
-  const API_URL = (import.meta.env && import.meta.env.VITE_API_URL) || 'http://localhost:5000'
+  const API_URL = (import.meta.env && import.meta.env.VITE_API_URL);
   const resolveImage = (url) => {
     if (!url) return ''
     if (url.startsWith('/api') || url.startsWith('/static')) return `${API_URL}${url}`

@@ -19,7 +19,7 @@ function AdminProducts() {
   const onChange = (e) => setForm({ ...form, [e.target.name]: e.target.value })
 
   const uploadImage = async (file) => {
-    const API_URL = (import.meta.env && import.meta.env.VITE_API_URL) || 'http://localhost:5000'
+    const API_URL = (import.meta.env && import.meta.env.VITE_API_URL);
     setUploading(true)
     const res = await fetch(`${API_URL}/api/images/upload`, {
       method: 'POST',
@@ -54,7 +54,7 @@ function AdminProducts() {
 
   const remove = async (id) => { await api.del(`/api/products/${id}`); load() }
 
-  const API_URL = (import.meta.env && import.meta.env.VITE_API_URL) || 'http://localhost:5000'
+  const API_URL = (import.meta.env && import.meta.env.VITE_API_URL);
   const resolveImage = (url) => url && (url.startsWith('/api')||url.startsWith('/static')) ? `${API_URL}${url}` : url
 
   return (

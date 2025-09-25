@@ -7,7 +7,7 @@ import { useNavigate, Link } from 'react-router-dom'
 function Cart() {
   const navigate = useNavigate()
   const { cart, removeFromCart, updateQuantity, getCartTotal } = useCart()
-  const API_URL = (import.meta.env && import.meta.env.VITE_API_URL) || 'http://localhost:5000'
+  const API_URL = (import.meta.env && import.meta.env.VITE_API_URL);
   const resolveImage = (url) => {
     if (!url) return ''
     if (url.startsWith('/api') || url.startsWith('/static')) return `${API_URL}${url}`

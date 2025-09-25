@@ -15,7 +15,7 @@ function Checkout() {
   const [success, setSuccess] = React.useState(false)
   const [address, setAddress] = React.useState({ fullName:'', phone:'', addressLine1:'', addressLine2:'', city:'', state:'', postalCode:'' })
   const [paymentMethod, setPaymentMethod] = React.useState('cod')
-  const API_URL = (import.meta.env && import.meta.env.VITE_API_URL) || 'http://localhost:5000'
+  const API_URL = (import.meta.env && import.meta.env.VITE_API_URL);
   const resolveImage = (url) => {
     if (!url) return ''
     if (url.startsWith('/api') || url.startsWith('/static')) return `${API_URL}${url}`
