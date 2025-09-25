@@ -40,7 +40,6 @@ server/     # Express API + MongoDB models and scripts
    ```powershell
    cd server; npm i; cd ..
    cd frontend; npm i; cd ..
-````
 
 2. **Configure environment**
 
